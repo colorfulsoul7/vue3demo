@@ -284,6 +284,8 @@ const getTranslate = (css: string) => {
 //     }
 //   } catch (error) {}
 // };
+
+defineExpose(dialogRef.value)
 </script>
 
 <style lang="scss" scoped>
