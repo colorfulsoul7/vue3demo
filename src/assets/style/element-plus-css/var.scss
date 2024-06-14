@@ -1,0 +1,13 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with ($colors: ('primary': ( // 'base': green,
+      // 'base': #0960BD,
+      'base': #D63529,
+    ),
+  ),
+  $border-radius: ('base': 2px,
+  ),
+  // $tag-border-radius: (
+  //   2px,
+  // )
+);
+
+$blueColor: #409eff;

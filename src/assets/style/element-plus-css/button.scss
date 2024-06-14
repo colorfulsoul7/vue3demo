@@ -1,0 +1,35 @@
+@keyframes buttonClick {
+  0% {
+    box-shadow: 0 0 0 0px rgb(from var(--el-color-primary) r g b / 0%);
+  }
+
+  25% {
+    box-shadow: 0 0 0 1px rgb(from var(--el-color-primary) r g b / 15%);
+  }
+
+  50% {
+    box-shadow: 0 0 0 2px rgb(from var(--el-color-primary) r g b / 33%);
+  }
+
+  75% {
+    box-shadow: 0 0 0 3px rgb(from var(--el-color-primary) r g b / 15%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 2px rgb(from var(--el-color-primary) r g b / 0%);
+  }
+}
+
+body {
+  .el-button {
+    transition: all 0.3s ease-in-out;
+
+    &:focus {
+      animation: buttonClick 0.3s ease-in-out;
+    }
+  }
+
+  .el-tag {
+    border-radius: var(--el-border-radius-base);
+  }
+}

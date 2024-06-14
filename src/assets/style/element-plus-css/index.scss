@@ -1,0 +1,105 @@
+@import './button.scss';
+@import './dialog.scss';
+@import './form.scss';
+@import './input.scss';
+
+// .el-fade-in-linear-enter-active,
+// .el-fade-in-linear-leave-active {
+//   .el-messagebox-plus {
+//     transition: all 0.3s ease-in-out !important;
+//     transform: scale(1);
+//     transform-origin: 100% 100% !important;
+//   }
+// }
+
+// .el-fade-in-linear-enter-to,
+// .el-fade-in-linear-leave-to {
+//   .el-messagebox-plus {
+//     transition: all 0.3s ease-in-out !important;
+//     transform: scale(0.2) !important;
+//     transform-origin: 100% 100% !important;
+//   }
+// }
+
+body {
+  .el-tree-node__expand-icon {
+    color: #000;
+  }
+
+  .el-messagebox-plus {
+    border-radius: 2px;
+    box-shadow: 0 4px 8px #0003, 0 6px 20px #00000030;
+  }
+}
+
+.fade-in-linear-enter-active {
+  .el-messagebox-plus {
+    transition: all 0.2s ease-in-out !important;
+    transform: scale(0.35);
+    opacity: 0;
+  }
+}
+
+.fade-in-linear-leave-active {
+  .el-messagebox-plus {
+    transition: all 0.2s ease-in-out !important;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in-linear-enter-to {
+  .el-messagebox-plus {
+    transition: all 0.2s ease-in-out !important;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.fade-in-linear-leave-to {
+  .el-messagebox-plus {
+    transition: all 0.2s ease-in-out !important;
+    transform: scale(0.35);
+    opacity: 0;
+  }
+}
+
+.el-message {
+  box-shadow: 0 4px 12px #00000026;
+  border-radius: var(--el-border-radius-base);
+}
+
+// drawer
+.el-drawer__header {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+// table
+.el-table {
+  .el-table__body {
+    .el-table__cell {
+      .cell:empty::before {
+        content: "-";
+        color: #999;
+      }
+
+      .el-divider.el-divider--vertical:last-child {
+        display: none;
+      }
+
+      .el-divider.el-divider--vertical:first-child:last-child {
+        display: inline-block;
+        border: none;
+      }
+
+      .el-divider.el-divider--vertical:only-child::before {
+        content: "-";
+        color: #999;
+      }
+    }
+  }
+}
+
+
