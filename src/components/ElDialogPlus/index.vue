@@ -8,6 +8,8 @@
       </template>
     </el-dialog>
   </div>
+  <p>  $attrs</p>
+  <p>  {{$attrs}}</p>
 </template>
 
 <script lang="ts" setup name="ElDialogPlus">
@@ -117,6 +119,7 @@ init()
 //   { immediate: true },
 // );
 onMounted(() => {
+
   // 这里需要使用 addEventListener的第三个参数为true  才能在所有点击事件的捕获阶段触发 即在窗口被打开前 (元素被点击时，先执行这个事件处理程序，然后再执行元素的点击事件)
   document.documentElement.addEventListener('click', clickHandler, true) // 事件捕获
   // nextTick(() => {
